@@ -1,62 +1,54 @@
-/* Genel stil */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background-color: #333;
+    background-color: #4CAF50;
     color: white;
-    padding: 20px;
+    padding: 10px 0;
     text-align: center;
 }
 
-h1 {
-    margin: 0;
+nav {
+    margin: 15px 0;
 }
 
-h2 {
-    color: #333;
-    font-size: 2em;
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-p {
-    font-size: 1.2em;
-    line-height: 1.6;
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
 }
 
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 10px 0;
 }
 
-/* Blog post */
-#blogPost {
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: rgb(209, 216, 0);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Buton */
-button {
+.button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
-    border: none;
+    text-decoration: none;
     border-radius: 5px;
-    cursor: pointer;
 }
 
-button:hover {
+.button:hover {
     background-color: #45a049;
 }
