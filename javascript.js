@@ -7,4 +7,3 @@ window.onload = function() {
         document.getElementById("pageDescription").innerText = "The content has been changed by clicking the button.";
     });
 };
-
