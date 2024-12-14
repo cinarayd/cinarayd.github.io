@@ -3,22 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Çınar Aydemir - Ana Sayfa</title>
-    <link rel="stylesheet" href="style.css"> <!-- CSS Bağlantısı -->
+    <title>Çınar Aydemir | Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome -->
+    <link rel="stylesheet" href="style.css"> <!-- CSS Dosyası -->
 </head>
 <body>
+    <!-- Navbar -->
     <header>
-        <h1>Çınar Aydemir</h1>
-        <p>Kişisel Web Siteme Hoş Geldiniz!</p>
+        <div class="container">
+            <div class="logo">Çınar Aydemir</div>
+            <nav>
+                <a href="#home">Ana Sayfa</a>
+                <a href="#blog">Blog</a>
+                <a href="#portfolio">Portfolyo</a>
+                <a href="#contact">İletişim</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="button-container">
-            <a href="blog.html" class="big-button">Blog</a>
-            <a href="portfolio.html" class="big-button">Portföy / Hakkımda</a>
-        </section>
-    </main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Merhaba, Ben Çınar!</h1>
+            <p>Yazılım geliştiricisi ve teknoloji tutkunu.</p>
+            <a href="#contact" class="cta-button">İletişime Geç</a>
+        </div>
+    </section>
 
+    <!-- Blog Section -->
+    <section id="blog">
+        <div class="container">
+            <h2>Blog</h2>
+            <div class="blog-posts">
+                <div class="post">
+                    <h3>Modern Web Tasarımının Temelleri</h3>
+                    <p>Modern bir web sitesi oluşturmanın püf noktalarını öğrenin.</p>
+                    <a href="#">Devamını Oku</a>
+                </div>
+                <div class="post">
+                    <h3>Flutter ile Mobil Uygulama Geliştirme</h3>
+                    <p>Flutter kullanarak uygulama geliştirmeye dair ipuçları.</p>
+                    <a href="#">Devamını Oku</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfolyo</h2>
+            <div class="projects">
+                <div class="project">
+                    <img src="https://via.placeholder.com/300" alt="Proje 1">
+                    <h3>Proje 1</h3>
+                    <p>Bu proje hakkında kısa bir açıklama.</p>
+                </div>
+                <div class="project">
+                    <img src="https://via.placeholder.com/300" alt="Proje 2">
+                    <h3>Proje 2</h3>
+                    <p>Bu proje hakkında kısa bir açıklama.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>İletişim</h2>
+            <p>Bana aşağıdaki sosyal medya hesaplarından ulaşabilirsiniz:</p>
+            <div class="contact-icons">
+                <a href="mailto:cnar.aydemirr@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.instagram.com/cnaraydemir/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/%C3%A7%C4%B1nar-aydemir-11937b33a/"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Çınar Aydemir. Tüm hakları saklıdır.</p>
     </footer>
