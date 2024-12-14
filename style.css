@@ -1,155 +1,233 @@
 /* Genel Ayarlar */
-body {
+* {
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.container {
-    width: 90%;
-    margin: auto;
-    max-width: 1200px;
-}
-
-/* Navbar */
-header {
-    background-color: #111;
-    color: #fff;
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-header .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-header nav {
-    float: right;
-}
-
-header nav a {
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
     color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    transition: color 0.3s;
-}
-
-header nav a:hover {
-    color: #ff6347;
 }
 
 /* Hero Section */
-.hero {
-    background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
-    height: 400px;
+#hero {
+    background: linear-gradient(135deg, #ff4f58, #ff7b5c);
     color: white;
+    padding: 80px 20px;
     text-align: center;
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+}
+
+.hero-container {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
-.hero h1 {
-    font-size: 2.5rem;
+.hero-content h1 {
+    font-size: 3rem;
     margin-bottom: 10px;
+    animation: fadeIn 1.5s ease-out;
 }
 
-.hero .cta-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #ff6347;
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-out 0.5s;
+}
+
+.cta-button {
+    background-color: #fcb6a8;
     color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1.2rem;
     text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
 }
 
-.hero .cta-button:hover {
-    background-color: #e5533c;
+.cta-button:hover {
+    background-color: #f8c2b5;
+    transform: scale(1.05);
+}
+
+/* About Section */
+#about {
+    background-color: #1c1c1c;
+    padding: 60px 20px;
+}
+
+.section-title h2 {
+    text-align: center;
+    color: #ff4f58;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.about-image img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.about-text p {
+    line-height: 1.6;
+    color: #d1d1d1;
+    font-size: 1.1rem;
+}
+
+/* Portfolio Section */
+#portfolio {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f6c5c1, #f9e5d3);
+}
+
+.portfolio-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+    transition: all 0.3s ease;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item h3 {
+    color: #ff4f58;
+}
+
+.portfolio-item p {
+    color: #aaa;
 }
 
 /* Blog Section */
 #blog {
-    background: #fff;
     padding: 60px 20px;
+    background-color: #232323;
 }
 
 .blog-posts {
     display: flex;
     gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.blog-posts .post {
-    background: #f9f9f9;
+.blog-post {
+    background-color: #2c2c2c;
+    border-radius: 10px;
     padding: 20px;
-    border-radius: 5px;
-    flex: 1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    transition: all 0.3s ease;
 }
 
-.blog-posts .post a {
-    color: #ff6347;
+.blog-post:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.blog-post h3 {
+    color: #ff4f58;
+}
+
+.blog-post a {
+    color: #ff4f58;
     text-decoration: none;
+    font-weight: 500;
 }
 
-.blog-posts .post a:hover {
-    text-decoration: underline;
-}
-
-/* Portfolio Section */
-#portfolio {
-    background: #eee;
-    padding: 60px 20px;
-}
-
-.projects {
-    display: flex;
-    gap: 20px;
-}
-
-.projects .project {
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.projects .project img {
-    max-width: 100%;
-    border-radius: 5px;
+.blog-post a:hover {
+    color: #f7c8c9;
 }
 
 /* Contact Section */
 #contact {
-    background: #111;
-    color: white;
-    text-align: center;
     padding: 60px 20px;
+    background: linear-gradient(135deg, #f9e5d3, #fcb6a8);
 }
 
-.contact-icons a {
-    color: white;
-    font-size: 2rem;
-    margin: 0 15px;
-    transition: color 0.3s;
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
 }
 
-.contact-icons a:hover {
-    color: #ff6347;
+.contact-item {
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact-item i {
+    font-size: 2.5rem;
+    color: #ff4f58;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    font-size: 1rem;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #ff4f58;
+}
+
+.contact-item a:hover {
+    color: #f7c8c9;
 }
 
 /* Footer */
 footer {
-    background: #111;
+    background-color: #232323;
     color: white;
     text-align: center;
     padding: 20px;
-    font-size: 0.9rem;
 }
